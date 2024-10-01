@@ -8,7 +8,7 @@ typedef struct  node{
 node* createnode(int data_){
     node* newnode = (node*)malloc(sizeof(node));
     if(!newnode){
-        printf("Memory Nahi mili");
+        printf("Memory not found");
         exit(0);
     }
     else{
@@ -30,7 +30,7 @@ int searchdata(node** head,int val){
     while(temp!=NULL){
         c=c+1;
         if(temp->data==val){
-            printf("Mil gyi😊 yha Par hai :- %d",c);
+            printf("found here :- %d",c);
             exit(0);
         }
         else{
@@ -38,7 +38,7 @@ int searchdata(node** head,int val){
         }
     }
 
-    printf("value nahi hai isme");
+    printf("value not present here");
 }
 
 int main(){
